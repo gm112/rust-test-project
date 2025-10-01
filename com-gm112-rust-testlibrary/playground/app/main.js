@@ -1,11 +1,10 @@
 import { add } from 'com-gm112-rust-testlibrary'
-const result = add(2, 2)
 
 console.log('Hello, World!')
-console.log('2 + 2 =', result)
+console.log('2 + 2 =', add(2, 2))
 
 const result_element = document.createElement('p')
-result_element.textContent = `2 + 2 = ${result}`
+result_element.textContent = `2 + 2 = ${add(2, 2)}`
 document.body.appendChild(result_element)
 
 const first_input_element = document.createElement('input')
@@ -26,7 +25,10 @@ submit_button.addEventListener('click', () => {
   const first_number = parseInt(first_input_element.value)
   const second_number = parseInt(second_input_element.value)
   const result = add(first_number, second_number)
+
   result_element.textContent = `${first_number} + ${second_number} = ${result}`
+  console.log(`${first_number} + ${second_number} = ${result}`)
+  debugger
 })
 
 document.body.appendChild(submit_button)

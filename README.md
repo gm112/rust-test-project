@@ -24,7 +24,7 @@ The root pnpm workspace implements several commands to orchestrate the project. 
 ### pnpm playground
 
 ```bash
-pnpm playground
+pnpm playground --open
 ```
 
 ### pnpm test
