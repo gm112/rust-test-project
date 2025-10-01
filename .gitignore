@@ -1,0 +1,5 @@
+/target
+
+# TypeScript
+node_modules/
+dist/
