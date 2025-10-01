@@ -1,0 +1,20 @@
+{
+  "name": "com-gm112-rust-testlibrary",
+  "private": false,
+  "type": "module",
+  "scripts": {
+    "prepare": "([ -d ./pkg ] || pnpm run build) || true",
+    "build": "wasm-pack build --target bundler",
+    "build:prod": "wasm-pack build --target bundler --release",
+    "format": "cargo fmt && cargo clippy --fix",
+    "lint": "cargo fmt --check && cargo clippy"
+  },
+  "files": [
+    "pkg/"
+  ],
+  "types": "pkg/com_gm112_rust_testlibrary.d.ts",
+  "main": "pkg/com_gm112_rust_testlibrary.js",
+  "sideEffects": [
+    "pkg/"
+  ]
+}

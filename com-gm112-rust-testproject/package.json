@@ -1,0 +1,10 @@
+{
+  "private": false,
+  "type": "module",
+  "scripts": {
+    "build": "cargo build",
+    "build:prod": "cargo build --release",
+    "format": "cargo fmt && cargo clippy --fix",
+    "lint": "cargo fmt --check && cargo clippy"
+  }
+}

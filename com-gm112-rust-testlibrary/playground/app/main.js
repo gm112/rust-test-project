@@ -1,6 +1,4 @@
-import init, { add } from 'com-gm112-rust-testlibrary'
-
-await init()
+import { add } from 'com-gm112-rust-testlibrary'
 const result = add(2, 2)
 
 console.log('Hello, World!')

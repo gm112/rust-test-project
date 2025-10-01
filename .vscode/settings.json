@@ -1,0 +1,52 @@
+{
+  "deno.enable": false,
+  "prettier.enable": true,
+  "eslint.enable": false,
+  "eslint.format.enable": false,
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "vue",
+    "json"
+  ],
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "never",
+    "source.organizeImports": "never",
+    "source.fixAll.eslint": "explicit"
+  },
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "editor.quickSuggestions": {
+    "strings": "on"
+  },
+  "tailwindCSS.classAttributes": [
+    "class",
+    "ui",
+    "active-class",
+    "inactive-class"
+  ],
+  "tailwindCSS.experimental.classRegex": [
+    ["ui:\\s*{([^)]*)\\s*}", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
+  ],
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.expand": false,
+  "explorer.sortOrder": "filesFirst",
+  "explorer.fileNesting.patterns": {
+    "package.json": "*.config.js, *.config.ts, *.workspace.ts, .nvmrc, yarn.lock, .npmrc, pnpm-lock.yaml, pnpm-workspace.yaml",
+    "tsconfig.json": "tsconfig.*.json",
+    ".editorconfig": "eslint.config.mjs, .prettierrc, .prettierignore, .gitignore",
+    ".env.local": "*.env, .env.*, .envrc, .env.d.ts",
+    ".gitignore": ".gitattributes, .gitmodules, .gitmessage, .lfsconfig, .mailmap, .git-blame*",
+    "README*": "AUTHORS, Authors, BACKERS*, Backers*, CHANGELOG*, CITATION*, CODEOWNERS, CODE_OF_CONDUCT*, CONTRIBUTING*, CONTRIBUTORS, COPYING*, CREDITS, Changelog*, Citation*, Code_Of_Conduct*, Codeowners, Contributing*, Contributors, Copying*, Credits, GOVERNANCE.MD, Governance.md, HISTORY.MD, History.md, LICENSE*, License*, MAINTAINERS, Maintainers, README-*, README_*, RELEASE_NOTES*, ROADMAP.MD, Readme-*, Readme_*, Release_Notes*, Roadmap.md, SECURITY.MD, SPONSORS*, Security.md, Sponsors*, authors, backers*, changelog*, citation*, code_of_conduct*, codeowners, contributing*, contributors, copying*, credits, governance.md, history.md, license*, maintainers, readme-*, readme_*, release_notes*, roadmap.md, security.md, sponsors*",
+    "Dockerfile": "*.dockerfile, .devcontainer.*, .dockerignore, captain-definition, compose.*, docker-compose.*, dockerfile*",
+    "*.ts": "${basename}.*.${extname}, ${capture}.*.tsx",
+    "*.tsx": "${basename}*.tsx, ${capture}.*.tsx",
+    "_index.tsx": "$.tsx"
+  }
+}
