@@ -5,8 +5,10 @@ This is a test project for Rust.
 ## Setup
 
 ```bash
-rustup toolchain install
+rustup install
 rustup target add wasm32-unknown-unknown
+cargo install wasm-pack
+cargo clean
 npm install -g corepack@latest
 
 corepack enable

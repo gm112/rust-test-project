@@ -17,10 +17,10 @@ dependencies:
 steps:
   - name: Install dependencies
     command: |
-      rustup toolchain install stable
+      rustup install
       rustup target add wasm32-unknown-unknown
-      cargo clean
       cargo install wasm-pack
+      cargo clean
 
       corepack enable
       pnpm install --frozen-lockfile
