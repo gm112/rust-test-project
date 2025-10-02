@@ -2,6 +2,7 @@
 name = "com-gm112-rust-testproject"
 version = "0.1.0"
 edition = "2024"
+rust-version = "1.90.0"
 
 [dependencies]
 com-gm112-rust-testlibrary = { version = "0.1.0", path = "../com-gm112-rust-testlibrary" }
