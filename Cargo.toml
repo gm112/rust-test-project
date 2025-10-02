@@ -4,3 +4,6 @@ resolver = "3"
 
 [profile.release]
 opt-level = "s"
+panic = "abort"
+lto = true
+codegen-units = 1

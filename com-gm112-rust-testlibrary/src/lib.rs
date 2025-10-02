@@ -1,4 +1,15 @@
 use wasm_bindgen::prelude::*;
+use wee_alloc::WeeAlloc;
+
+#[global_allocator]
+static ALLOC: WeeAlloc = WeeAlloc::INIT;
+
+#[cfg(feature = "console_error_panic_hook")]
+#[wasm_bindgen(start)]
+pub fn set_panic_hook() {
+    console_error_panic_hook::set_once();
+}
+
 /// Adds two numbers.
 ///
 /// @example <caption>Add two numbers in Rust</caption>
