@@ -17,6 +17,6 @@
   "main": "pkg/com_gm112_rust_testlibrary.js",
   "sideEffects": [
     "pkg/",
-    "./snippets/*"
+    "./pkg/snippets/*"
   ]
 }
