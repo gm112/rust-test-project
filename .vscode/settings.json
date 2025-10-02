@@ -47,6 +47,10 @@
     "Dockerfile": "*.dockerfile, .devcontainer.*, .dockerignore, captain-definition, compose.*, docker-compose.*, dockerfile*",
     "*.ts": "${basename}.*.${extname}, ${capture}.*.tsx",
     "*.tsx": "${basename}*.tsx, ${capture}.*.tsx",
+    "*.rs": "${basename}*.rs, ${capture}.*.rs",
+    "*.js": "${basename}*.js, ${capture}.*.js",
+    "*.jsx": "${basename}*.jsx, ${capture}.*.jsx",
+    "*.mjs": "${basename}*.mjs, ${capture}.*.mjs",
     "_index.tsx": "$.tsx"
   }
 }

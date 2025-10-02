@@ -41,6 +41,8 @@ importers:
 
   com-gm112-rust-testlibrary: {}
 
+  com-gm112-rust-testlibrary/pkg: {}
+
   com-gm112-rust-testlibrary/playground:
     dependencies:
       '@vitest/browser':

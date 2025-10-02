@@ -1,5 +1,4 @@
 use wasm_bindgen::prelude::*;
-
 /// Adds two numbers.
 ///
 /// @example <caption>Add two numbers in Rust</caption>
