@@ -1,3 +1,6 @@
 [workspace]
 members = ["com-gm112-rust-testlibrary", "com-gm112-rust-testproject"]
 resolver = "3"
+
+[profile.release]
+opt-level = "s"

@@ -4,11 +4,18 @@ version = "0.1.0"
 edition = "2024"
 rust-version = "1.90.0"
 
-#crate-type = ["cdylib", "rlib"] # cdylib for Wasm, rlib for Rust libraries
-
 [lib]
 crate-type = ["cdylib", "rlib"]
 
+[features]
+default = ["console_error_panic_hook"]
+
 [dependencies]
+console_error_panic_hook = { version = "0.1.7", optional = true }
 wasm-bindgen = "0.2.104"
+
+[dev-dependencies]
 wasm-bindgen-test = "0.3.54"
+
+[package.metadata.wasm-pack.profile.dev.wasm-bindgen]
+dwarf-debug-info = true

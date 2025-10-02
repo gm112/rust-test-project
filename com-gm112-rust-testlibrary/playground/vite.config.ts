@@ -4,4 +4,8 @@ import wasm from 'vite-plugin-wasm'
 export default defineConfig({
   plugins: [wasm()],
   root: 'app',
+  build: {
+    sourcemap: true,
+    target: 'esnext',
+  },
 })

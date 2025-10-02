@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "prepare": "([ -d ./pkg ] || pnpm run build) || true",
-    "build": "wasm-pack build --target bundler",
+    "build": "wasm-pack build --target bundler --dev",
     "build:prod": "wasm-pack build --target bundler --release",
     "test": "wasm-pack test --node",
     "format": "cargo fmt && cargo clippy --fix",
