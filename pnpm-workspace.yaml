@@ -1,4 +1,5 @@
 packages:
+  - '!com-gm112-rust-testlibrary/pkg'
   - com-gm112-rust-testlibrary/**/*
   - com-gm112-rust-testlibrary
   - com-gm112-rust-testproject/**/*
