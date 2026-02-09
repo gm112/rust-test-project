@@ -18,5 +18,8 @@
   "sideEffects": [
     "pkg/",
     "./pkg/snippets/*"
-  ]
+  ],
+  "devDependencies": {
+    "@vitest/browser-playwright": "catalog:"
+  }
 }

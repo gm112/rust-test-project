@@ -8,6 +8,7 @@ packages:
 catalog:
   '@types/node': ^25.2.2
   '@vitest/browser': ^4.0.18
+  '@vitest/browser-playwright': ^4.0.18
   playwright: ^1.58.2
   prettier: ^3.8.1
   typescript: ^5.9.3
