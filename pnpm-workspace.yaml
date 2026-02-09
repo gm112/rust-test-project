@@ -6,14 +6,14 @@ packages:
   - com-gm112-rust-testproject
 
 catalog:
-  '@types/node': ^24.6.2
-  '@vitest/browser': ^3.2.4
-  playwright: ^1.55.1
-  prettier: ^3.6.2
+  '@types/node': ^25.2.2
+  '@vitest/browser': ^4.0.18
+  playwright: ^1.58.2
+  prettier: ^3.8.1
   typescript: ^5.9.3
-  vite: ^7.1.9
+  vite: ^7.3.1
   vite-plugin-wasm: ^3.5.0
-  vitest: 3.2.4
+  vitest: 4.0.18
 
 catalogMode: prefer
 
